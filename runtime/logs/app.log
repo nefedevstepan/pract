@@ -1,0 +1,1653 @@
+2021-02-17 17:33:00 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: yii\web\Request::cookieValidationKey must be configured with a secret key. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Request.php:1645
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Request.php(1627): yii\web\Request->loadCookies()
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\User.php(586): yii\web\Request->getCookies()
+#2 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#3 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#4 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#5 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#6 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#7 C:\OSPanel\domains\pr\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#8 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#11 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#12 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#13 C:\OSPanel\domains\pr\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#14 C:\OSPanel\domains\pr\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#15 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#16 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#17 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#18 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#19 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#20 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#21 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#22 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#23 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#25 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#26 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#27 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->__construct(Array)
+#28 {main}
+2021-02-17 17:33:00 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '34866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572380.604
+    'REQUEST_TIME' => 1613572380
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:40:22 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:22 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = [
+    'r' => 'students'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=students'
+    'REQUEST_URI' => '/web/index.php?r=students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572822.224
+    'REQUEST_TIME' => 1613572822
+    'argv' => [
+        0 => 'r=students'
+    ]
+    'argc' => 1
+]
+2021-02-17 17:40:23 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/register". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/register', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:23 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = [
+    'r' => 'user/register'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/index.php?r=students'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregister'
+    'REQUEST_URI' => '/web/index.php?r=user%2Fregister'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572823.294
+    'REQUEST_TIME' => 1613572823
+    'argv' => [
+        0 => 'r=user%2Fregister'
+    ]
+    'argc' => 1
+]
+2021-02-17 17:40:24 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/login". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/login', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:24 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = [
+    'r' => 'user/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/index.php?r=user%2Fregister'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Flogin'
+    'REQUEST_URI' => '/web/index.php?r=user%2Flogin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572824.222
+    'REQUEST_TIME' => 1613572824
+    'argv' => [
+        0 => 'r=user%2Flogin'
+    ]
+    'argc' => 1
+]
+2021-02-17 17:40:25 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/register". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/register', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:25 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = [
+    'r' => 'user/register'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/index.php?r=user%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregister'
+    'REQUEST_URI' => '/web/index.php?r=user%2Fregister'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572825.053
+    'REQUEST_TIME' => 1613572825
+    'argv' => [
+        0 => 'r=user%2Fregister'
+    ]
+    'argc' => 1
+]
+2021-02-17 17:40:25 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/login". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/login', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:25 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = [
+    'r' => 'user/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/index.php?r=user%2Fregister'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Flogin'
+    'REQUEST_URI' => '/web/index.php?r=user%2Flogin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572825.525
+    'REQUEST_TIME' => 1613572825
+    'argv' => [
+        0 => 'r=user%2Flogin'
+    ]
+    'argc' => 1
+]
+2021-02-17 17:40:25 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/register". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/register', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:25 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = [
+    'r' => 'user/register'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/index.php?r=user%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregister'
+    'REQUEST_URI' => '/web/index.php?r=user%2Fregister'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572825.887
+    'REQUEST_TIME' => 1613572825
+    'argv' => [
+        0 => 'r=user%2Fregister'
+    ]
+    'argc' => 1
+]
+2021-02-17 17:40:40 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:40 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/register'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35049'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572840.703
+    'REQUEST_TIME' => 1613572840
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:40:48 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:47 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35049'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572847.95
+    'REQUEST_TIME' => 1613572847
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:40:49 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:49 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/students'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35049'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572849.493
+    'REQUEST_TIME' => 1613572849
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:40:50 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:49 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/students'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35049'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572849.972
+    'REQUEST_TIME' => 1613572849
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:40:50 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:40:50 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/students'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35049'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613572850.335
+    'REQUEST_TIME' => 1613572850
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:45:32 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\pr\views\students\index.php in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(app\controllers\StudentsController))
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('index', Array, Object(app\controllers\StudentsController))
+#2 C:\OSPanel\domains\pr\controllers\StudentsController.php(43): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\StudentsController->actionIndex()
+#4 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#7 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('students', Array)
+#8 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2021-02-17 17:45:31 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/register'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35151'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613573131.764
+    'REQUEST_TIME' => 1613573131
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:45:46 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:45:46 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/register'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35154'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613573146.861
+    'REQUEST_TIME' => 1613573146
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:46:07 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/students in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/students', Array)
+#2 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:46:07 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35156'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/site/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613573167.137
+    'REQUEST_TIME' => 1613573167
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:46:09 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/students in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/students', Array)
+#2 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:46:08 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/site/students'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35157'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/site/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613573168.949
+    'REQUEST_TIME' => 1613573168
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 17:53:24 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 17:53:24 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35235'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613573604.852
+    'REQUEST_TIME' => 1613573604
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 18:08:45 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 18:08:44 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35417'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613574524.928
+    'REQUEST_TIME' => 1613574524
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 18:08:46 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 18:08:46 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/students'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35417'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613574526.344
+    'REQUEST_TIME' => 1613574526
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 18:08:49 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/students". in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 18:08:49 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/user/students'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35417'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/user/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613574529.088
+    'REQUEST_TIME' => 1613574529
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 18:11:48 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: students/students in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('students/studen...', Array)
+#2 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 18:11:48 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/students/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35451'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/students/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613574708.939
+    'REQUEST_TIME' => 1613574708
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 18:11:53 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: students/students in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('students/studen...', Array)
+#2 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 18:11:53 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/students/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35451'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/students/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613574713.091
+    'REQUEST_TIME' => 1613574713
+    'argv' => []
+    'argc' => 0
+]
+2021-02-17 18:12:09 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: students/students in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('students', Array)
+#1 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('students/studen...', Array)
+#2 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\pr\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\pr\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\pr\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-02-17 18:12:09 [127.0.0.1][-][o8k9qskd6dpg11q4s02qgf13pekhhi84][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'o8k9qskd6dpg11q4s02qgf13pekhhi84'
+    '_csrf' => 'b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'pr'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.1099 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://pr/web/students/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,la;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=o8k9qskd6dpg11q4s02qgf13pekhhi84; _csrf=b8b6ba9e979a1257802f12fbbe5470864135c9cea5f3a5d89f218bfedca836c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODugwRtIYKVWQpAp0wRmsBP2FYVRwnEa%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'pr'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/pr'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/pr/web/index.php'
+    'REMOTE_PORT' => '35460'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/students/students'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1613574729.504
+    'REQUEST_TIME' => 1613574729
+    'argv' => []
+    'argc' => 0
+]
